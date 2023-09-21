@@ -1675,9 +1675,7 @@ header .logo a {
     height: 7.8rem;
     width: 7.8rem;
   }
-  .intro-info .lead {
-    padding-left: 11rem;
-  }
+
   .about-content h3 {
     text-align: center;
   }
@@ -2703,9 +2701,25 @@ footer .copyright span:last-child::after {
 /** Custome Style **/
 .portfolio.card {
   border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
+
   margin-bottom: 4rem;
+
+  .card-img {
+    position: relative;
+
+    .portfolio-banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio.card {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .card-img {
     position: relative;
@@ -2721,11 +2735,11 @@ footer .copyright span:last-child::after {
   .card-body {
     width: 50%;
   }
+}
 
-  .multiple-image {
-    display: flex;
-    justify-content: space-around;
-  }
+.multiple-image {
+  display: flex;
+  justify-content: space-around;
 }
 
 .d-flex {

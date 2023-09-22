@@ -2704,19 +2704,19 @@ footer .copyright span:last-child::after {
 /** Custome Style **/
 .portfolio.card {
   border-radius: 5px;
-
   margin-bottom: 4rem;
-
-  .card-img {
-    position: relative;
-
-    .portfolio-banner {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
 }
+
+.card-img {
+  position: relative;
+}
+
+.portfolio-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .project-item {
   text-align: center;
 }
@@ -2730,12 +2730,12 @@ footer .copyright span:last-child::after {
   .card-img {
     position: relative;
     width: 40%;
+  }
 
-    .portfolio-banner {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  .portfolio-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .card-body {

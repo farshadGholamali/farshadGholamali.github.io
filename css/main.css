@@ -1193,18 +1193,21 @@ header .row {
 header .top-bar {
   display: block;
   background: #000000;
-  min-width: 220px;
+  min-width: 332px;
   min-height: 66px;
   position: absolute;
-  left: 90px;
   top: 0;
 }
 header .logo {
   float: left;
   margin-left: 20px;
   margin-right: 50px;
-  margin-top: 25px;
+  margin-top: 20px;
   position: relative;
+
+  .logo-title {
+    color: #fff;
+  }
 }
 header .logo a {
   display: block;
@@ -1697,8 +1700,8 @@ header .logo a {
     margin-top: 3rem;
   }
   .intro-info img {
-    height: 6.6rem;
-    width: 6.6rem;
+    height: 10.6rem;
+    width: 10.6rem;
     float: none;
     display: inline-block;
   }
@@ -2713,6 +2716,9 @@ footer .copyright span:last-child::after {
       left: 0;
     }
   }
+}
+.project-item {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
